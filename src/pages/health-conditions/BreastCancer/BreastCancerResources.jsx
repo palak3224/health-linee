@@ -174,6 +174,11 @@ const BreastCancerResources = () => {
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
+
+                                <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-orange-500 text-white rounded-lg hover:from-purple-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+                  <span>Download PDF</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
               </div>
             </div>
           </div>

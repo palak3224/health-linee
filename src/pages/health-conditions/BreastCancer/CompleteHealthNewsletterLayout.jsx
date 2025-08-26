@@ -392,11 +392,21 @@ export default function CompleteHealthNewsletterLayout() {
               <p className="text-gray-600 leading-relaxed mb-6">{selectedArticle.description}</p>
               <div className="border-t pt-6">
               {/* <Link to={selectedArticle.link}> */}
-              <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              <div className='flex item-center gap-4'>
+
+                              <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                 onClick={() => handlePostClick(selectedArticle.link)}
               >
                   Continue Reading
                 </button>
+
+                              <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                onClick={() => handlePostClick(selectedArticle.link)}
+              >
+                  Download PDF
+                </button>
+
+              </div>
               {/* </Link> */}
                 
               </div>

