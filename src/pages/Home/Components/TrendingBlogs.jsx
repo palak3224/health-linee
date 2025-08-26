@@ -207,7 +207,10 @@ const TrendingBlogs = () => {
                       {blog.excerpt}
                     </p>
 
-                    <motion.button
+                    <div className="flex item-center justify-between">
+
+
+                                        <motion.button
                       whileHover={{ x: 5 }}
                       className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors"
                     >
@@ -223,6 +226,20 @@ const TrendingBlogs = () => {
                         <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
                     </motion.button>
+
+                    <motion.a
+  href={`/pdfs/blog-${blog.id}.pdf`} // Assumes static files like /public/pdfs/blog-1.pdf, etc.
+  download
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="mt-4 inline-block text-sm text-white bg-purple-600 px-5 py-2 rounded-full font-medium hover:bg-purple-700 transition-all"
+>
+  Download PDF
+</motion.a>
+                    </div>
+
+
+
                   </div>
                 </div>
               

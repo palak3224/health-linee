@@ -419,7 +419,7 @@ const Navbar = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="hidden lg:block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-2 rounded-lg font-medium hover:from-purple-700 hover:to-purple-800 transition-all duration-200 shadow-md"
               >
-                Subscribe
+                Download PDF
               </motion.button>
 
               <motion.button
