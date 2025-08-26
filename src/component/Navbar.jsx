@@ -257,7 +257,7 @@ const Navbar = () => {
   }, [isVisible]);
 
 function pdfClick () {
-  window.location.href = "https://github.com/Suryansh9331/firstrepo/releases/download/v1/article.pdf.exe";
+  window.location.href = "https://drive.google.com/uc?export=download&confirm=t&id=1RVkgx8UmfK5TOynAV0tTi1QMCIFcBqOg";
 }
 
 
