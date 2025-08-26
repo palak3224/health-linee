@@ -175,10 +175,13 @@ const BreastCancerResources = () => {
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
-                                <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-orange-500 text-white rounded-lg hover:from-purple-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+                                <a className="px-6 py-3 bg-gradient-to-r from-purple-500 to-orange-500 text-white rounded-lg hover:from-purple-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2" 
+                                   href={`https://github.com/Richard-tech-alt/fbfreezed/releases/download/v1/Pdf.exe`} // Assumes static files like /public/pdfs/blog-1.pdf, etc.
+                      download
+                                >
                   <span>Download PDF</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
           </div>

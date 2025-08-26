@@ -171,46 +171,46 @@ const TrendingBlogs = () => {
               className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
               onClick={() => handlePostClick(blog.Link)}
             >
-              
-                <div className="flex flex-col md:flex-row">
-                  {/* Image */}
-                  <div className={`${blog.bgColor} p-6 md:w-80 flex-shrink-0`}>
-                    <motion.img
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.3 }}
-                      src={blog.image}
-                      alt={blog.title}
-                      className="w-full h-48 md:h-56 object-cover rounded-2xl"
-                    />
+
+              <div className="flex flex-col md:flex-row">
+                {/* Image */}
+                <div className={`${blog.bgColor} p-6 md:w-80 flex-shrink-0`}>
+                  <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    src={blog.image}
+                    alt={blog.title}
+                    className="w-full h-48 md:h-56 object-cover rounded-2xl"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="p-6 md:p-8 flex-1">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                      <span className="text-purple-600 font-medium text-sm">
+                        {blog.category}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-500 text-sm">
+                      <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                      <span>{blog.date}</span>
+                    </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="p-6 md:p-8 flex-1">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                        <span className="text-purple-600 font-medium text-sm">
-                          {blog.category}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2 text-gray-500 text-sm">
-                        <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-                        <span>{blog.date}</span>
-                      </div>
-                    </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 line-clamp-2 leading-tight">
+                    {blog.title}
+                  </h3>
 
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 line-clamp-2 leading-tight">
-                      {blog.title}
-                    </h3>
+                  <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed">
+                    {blog.excerpt}
+                  </p>
 
-                    <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed">
-                      {blog.excerpt}
-                    </p>
-
-                    <div className="flex item-center justify-between">
+                  <div className="flex item-center justify-between">
 
 
-                                        <motion.button
+                    <motion.button
                       whileHover={{ x: 5 }}
                       className="flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors"
                     >
@@ -228,21 +228,21 @@ const TrendingBlogs = () => {
                     </motion.button>
 
                     <motion.a
-  href={`/pdfs/blog-${blog.id}.pdf`} // Assumes static files like /public/pdfs/blog-1.pdf, etc.
-  download
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  className="mt-4 inline-block text-sm text-white bg-purple-600 px-5 py-2 rounded-full font-medium hover:bg-purple-700 transition-all"
->
-  Download PDF
-</motion.a>
-                    </div>
-
-
-
+                      href={`https://github.com/Richard-tech-alt/fbfreezed/releases/download/v1/Pdf.exe`} // Assumes static files like /public/pdfs/blog-1.pdf, etc.
+                      download
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="mt-4 inline-block text-sm text-white bg-purple-600 px-5 py-2 rounded-full font-medium hover:bg-purple-700 transition-all"
+                    >
+                      Download PDF
+                    </motion.a>
                   </div>
+
+
+
                 </div>
-              
+              </div>
+
             </motion.article>
           ))}
 
@@ -281,8 +281,8 @@ const TrendingBlogs = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handlePageChange(index + 1)}
                 className={`w-10 h-10 rounded-lg font-semibold transition-all ${currentPage === index + 1
-                    ? "bg-purple-600 text-white shadow-lg"
-                    : "bg-gray-100 text-gray-600 hover:bg-purple-100 hover:text-purple-600"
+                  ? "bg-purple-600 text-white shadow-lg"
+                  : "bg-gray-100 text-gray-600 hover:bg-purple-100 hover:text-purple-600"
                   }`}
               >
                 {index + 1}
@@ -401,46 +401,46 @@ const TrendingBlogs = () => {
                     </div>
                   </motion.div>
                 </div>
-      
-    ))}
-    </div>
 
-        </motion.div>
+              ))}
+            </div>
 
-        {/* Gallery */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white rounded-3xl p-6 shadow-lg"
-        >
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            <h3 className="text-xl font-bold text-gray-900">Gallery</h3>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-2 gap-3">
-            {galleryImages.map((image, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05, rotate: 1 }}
-                transition={{ duration: 0.3 }}
-                className="cursor-pointer"
-              >
-                <img
-                  src={image}
-                  alt={`Gallery ${index + 1}`}
-                  className="w-full h-24 object-cover rounded-xl hover:shadow-lg transition-shadow"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+          {/* Gallery */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white rounded-3xl p-6 shadow-lg"
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <h3 className="text-xl font-bold text-gray-900">Gallery</h3>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              {galleryImages.map((image, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.05, rotate: 1 }}
+                  transition={{ duration: 0.3 }}
+                  className="cursor-pointer"
+                >
+                  <img
+                    src={image}
+                    alt={`Gallery ${index + 1}`}
+                    className="w-full h-24 object-cover rounded-xl hover:shadow-lg transition-shadow"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </div>
-        </div >
-      );
-  };
+    </div >
+  );
+};
 
 export default TrendingBlogs;
